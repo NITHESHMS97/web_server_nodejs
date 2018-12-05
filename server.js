@@ -22,13 +22,13 @@ app.use((req,res,next)=>{
   next()// tells when middleware function is done
 
 });
-
+/*
 app.use((req,res,next)=>
 {
     res.render('maintance.hbs')
 
 });
-
+*/
 app.use(express.static(__dirname+'/public'));
 
 hbs.registerHelper('getCurrerntYear',()=>
